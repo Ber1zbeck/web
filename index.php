@@ -20,27 +20,30 @@ if (isset($_GET["page"])) {
         case 'login':
             include 'views/home/login.php';
             break;
+        case 'busca-tu-zona':
+            include 'views/home/busca_tu_zona.php';
+            break;
 
         #Usuario
         case 'inicio-usuario':
             include 'views/users/Usuario/inicio.php';
-             break;
+            break;
 
-             case 'puntos-usuario':
+        case 'puntos-usuario':
             include 'views/users/Usuario/puntos.php';
-             break;
-             
-             case 'reciclajes-usuario':
+            break;
+
+        case 'reciclajes-usuario':
             include 'views/users/Usuario/reciclajes.php';
-             break;
+            break;
 
-             case 'cupones-usuario':
+        case 'cupones-usuario':
             include 'views/users/Usuario/cupones.php';
-             break;
+            break;
 
-              case 'perfil-usuario':
+        case 'perfil-usuario':
             include 'views/users/Usuario/perfil.php';
-             break;
+            break;
     }
 } else {
     include 'views/home/inicio.php';
