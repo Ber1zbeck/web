@@ -14,6 +14,8 @@ $recursos_pop_js  = "vendor/bootstrap/js/popper.min.js";
 # Templates
 $templates_dir = $base_dir . "/views/template";
 
+#Inicio
+$templates_header = $base_dir . "/template/header.php";
 $templates_navbar = $base_dir . "/template/navbar.php";
 $templates_footer = $base_dir . "/template/footer.php";
 
