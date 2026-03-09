@@ -49,7 +49,7 @@
         <h2>El cuidado de tu localidad lo fomentamos reciclando</h2>
         <p>Únete a miles de personas comprometidas con el medio ambiente que obtienen recompensas mientras ayudan a
             proteger nuestro planeta. ¡Comienza hoy!</p>
-        <button class="btn btn-white">Busca tu zona</button>
+        <button class="btn btn-white" a href='?page=busca_tu_zona'>Busca tu zona</button>
     </section>
 
     <?php include $templates_footer; ?>
