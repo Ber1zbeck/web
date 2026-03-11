@@ -32,7 +32,7 @@ if (isset($_GET["page"])) {
         case 'puntos-usuario':
             include 'views/users/Usuario/puntos.php';
             break;
-
+            
         case 'reciclajes-usuario':
             include 'views/users/Usuario/reciclajes.php';
             break;
