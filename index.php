@@ -32,7 +32,7 @@ if (isset($_GET["page"])) {
         case 'puntos-usuario':
             include 'views/users/Usuario/puntos.php';
             break;
-            
+
         case 'reciclajes-usuario':
             include 'views/users/Usuario/reciclajes.php';
             break;
@@ -43,6 +43,15 @@ if (isset($_GET["page"])) {
 
         case 'perfil-usuario':
             include 'views/users/Usuario/perfil.php';
+            break;
+
+        #Cupones
+        case 'cupones-cafeteria':
+            include 'views/users/Usuario/cupones/cupones-cafeteria.php';
+            break;
+
+        case 'cupones-oxxo':
+            include 'views/users/Usuario/cupones/cupones-oxxo.php';
             break;
     }
 } else {
