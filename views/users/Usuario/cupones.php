@@ -51,7 +51,6 @@ $empresas = EmpresasCuponesController::obtenerEmpresas($empresas_cupones);
                                 <?php if (!empty($empresa['logo_url'])): ?>
                                     <img
                                         src="<?php echo htmlspecialchars($empresa['logo_url']); ?>"
-                                        alt="<?php echo htmlspecialchars($empresa['nombre_comercial']); ?>"
                                         class="img-fluid mb-3"
                                         style="max-height: 100px; object-fit: contain;">
                                 <?php endif; ?>
@@ -59,10 +58,6 @@ $empresas = EmpresasCuponesController::obtenerEmpresas($empresas_cupones);
                                 <h5 class="card-title">
                                     <?php echo htmlspecialchars($empresa['nombre_comercial']); ?>
                                 </h5>
-
-                                <p class="text-muted mb-3">
-                                    <?php echo htmlspecialchars($empresa['contacto_enlace']); ?>
-                                </p>
 
                                 <div class="mt-auto">
                                     <a href="#" class="btn btn-success">
