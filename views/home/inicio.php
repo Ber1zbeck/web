@@ -1,6 +1,5 @@
 <?php include $templates_header; ?>
 
-
 <body>
 
     <?php include $templates_navbar; ?>
