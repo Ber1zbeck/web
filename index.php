@@ -46,12 +46,8 @@ if (isset($_GET["page"])) {
             break;
 
         #Cupones
-        case 'cupones-cafeteria':
-            include 'views/users/Usuario/cupones/cupones-cafeteria.php';
-            break;
-
-        case 'cupones-oxxo':
-            include 'views/users/Usuario/cupones/cupones-oxxo.php';
+        case 'cupones-empresa':
+            include 'views/users/Usuario/cupones/empresa.php';
             break;
 
         #Moderador

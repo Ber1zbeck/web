@@ -59,11 +59,9 @@ $empresas = EmpresasCuponesController::obtenerEmpresas($empresas_cupones);
                                     <?php echo htmlspecialchars($empresa['nombre_comercial']); ?>
                                 </h5>
 
-                                <div class="mt-auto">
-                                    <a href="#" class="btn btn-success">
-                                        Ver cupones
-                                    </a>
-                                </div>
+                                <a href="?page=cupones-empresa&id=<?php echo $empresa['id_empresa']; ?>" class="btn btn-success">
+                                    Ver cupones
+                                </a>
 
                             </div>
                         </div>
@@ -83,4 +81,5 @@ $empresas = EmpresasCuponesController::obtenerEmpresas($empresas_cupones);
     <?php include $templates_footer_usu; ?>
 
 </body>
+
 </html>
