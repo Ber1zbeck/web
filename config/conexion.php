@@ -1,9 +1,9 @@
 <?php
 
-$server = "localhost";
-$database = "bote_reciclaje";
-$user = "sa";
-$password = "root";
+$server = "sirema-server.database.windows.net";
+$database = "sirema-server1";
+$user = "admin_sirema";
+$password = "Suesa.x1t";
 
 try {
 
