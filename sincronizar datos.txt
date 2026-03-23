@@ -1,0 +1,18 @@
+🔄 PASO 3: Sincronizar cambios
+Cuando trabajes en laptop:
+git add .
+git commit -m "cambios"
+git push
+En la PC:
+git pull
+Y viceversa
+
+👉 En la PC haces cambios:
+
+git add .
+git commit -m "cambios PC"
+git push
+
+👉 En laptop:
+
+git pull
