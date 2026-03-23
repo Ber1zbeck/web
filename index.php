@@ -53,6 +53,16 @@ if (isset($_GET["page"])) {
         case 'cupones-oxxo':
             include 'views/users/Usuario/cupones/cupones-oxxo.php';
             break;
+
+        #Moderador
+        case 'mod-inicio':
+            include 'views/users/Moderador/inicio.php';
+            break;
+
+        #Administrador
+        case 'adm-inicio':
+            include 'views/users/Administrador/inicio.php';
+            break;
     }
 } else {
     include 'views/home/inicio.php';

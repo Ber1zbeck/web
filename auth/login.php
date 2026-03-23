@@ -37,21 +37,29 @@ if ($usuario) {
         $_SESSION['nombre'] = $usuario['nombre_completo'];
         $_SESSION['tipo'] = $usuario['tipo_usuario'];
 
-        header("Location: ../?page=inicio-usuario");
-        exit();
+        switch ($usuario['tipo_usuario']) {
+            case 'Administrador':
+                header("Location: ../?page=adm-inicio");
+                exit();
+
+            case 'Moderador':
+                header("Location: ../?page=mod-inicio");
+                exit();
+
+            case 'Usuario':
+            default:
+                header("Location: ../?page=inicio-usuario");
+                exit();
+        }
 
     } else {
-
         header("Location: ../?page=login&error=clave");
         exit();
-
     }
 
 } else {
-
     header("Location: ../?page=login&error=usuario");
     exit();
-
 }
 
 $stmt = null;
