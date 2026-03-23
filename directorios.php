@@ -1,5 +1,5 @@
 <?php
-$base_dir = $_SERVER["DOCUMENT_ROOT"] . "/bote/web";
+$base_dir = $_SERVER["DOCUMENT_ROOT"] . "/web";
 # ---------------------------------------------------
 # Recursos
 # ---------------------------------------------------
