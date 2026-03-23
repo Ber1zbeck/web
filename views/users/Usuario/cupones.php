@@ -15,7 +15,6 @@ $id_usuario = $_SESSION['id_usuario'];
 $cupones = CuponesController::verCupones($conn, $id_usuario);
 $total_cupones = $cupones['total_cupones'] ?? 0;
 
-// Obtener empresas desde controller + model
 $empresas = EmpresasCuponesController::obtenerEmpresas($empresas_cupones);
 ?>
 
@@ -61,7 +60,7 @@ $empresas = EmpresasCuponesController::obtenerEmpresas($empresas_cupones);
 
                                 <a href="?page=cupones-empresa&id=<?php echo $empresa['id_empresa']; ?>" class="btn btn-success">
                                     Ver cupones
-                                </a>
+                                </a>    
 
                             </div>
                         </div>
