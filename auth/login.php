@@ -42,14 +42,14 @@ if ($usuario) {
 
     } else {
 
-        header("Location: ../login.html?error=clave");
+        header("Location: ../?page=inicio-usuario?error=clave");
         exit();
 
     }
 
 } else {
 
-    header("Location: ../login.html?error=usuario");
+    header("Location: ../?page=inicio-usuario?error=usuario");
     exit();
 
 }

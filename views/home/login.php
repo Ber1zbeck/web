@@ -22,6 +22,30 @@
 
         <h4 class="title">SIR</h4>
 
+        <?php if (isset($_GET['error'])): ?>
+
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+                <?php
+                switch ($_GET['error']) {
+                    case 'clave':
+                        echo "Contraseña incorrecta";
+                        break;
+                    case 'usuario':
+                        echo "Usuario no encontrado";
+                        break;
+                    case 'campos':
+                        echo "Completa todos los campos";
+                        break;
+                }
+                ?>
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+
+            </div>
+
+        <?php endif; ?>
+
         <form action="auth/login.php" method="POST">
 
             <div class="mb-3">
